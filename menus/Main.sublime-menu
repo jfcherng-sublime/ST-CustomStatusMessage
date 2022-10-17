@@ -1,0 +1,48 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "CustomStatusMessage",
+                        "children": [
+                            {
+                                "caption": "-",
+                            },
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/CustomStatusMessage/CustomStatusMessage.sublime-settings",
+                                    "default": "{\n\t$0\n}\n",
+                                },
+                            },
+                            {
+                                "caption": "-",
+                            },
+                            {
+                                "caption": "README",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/CustomStatusMessage/README.md",
+                                },
+                            },
+                            {
+                                "caption": "CHANGELOG",
+                                "command": "open_file",
+                                "args": {
+                                    "file": "${packages}/CustomStatusMessage/CHANGELOG.md",
+                                },
+                            },
+                            {
+                                "caption": "-",
+                            },
+                        ],
+                    },
+                ],
+            },
+        ],
+    },
+]

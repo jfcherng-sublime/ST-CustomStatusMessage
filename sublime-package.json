@@ -1,0 +1,34 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": ["/CustomStatusMessage.sublime-settings"],
+        "schema": {
+          "$id": "sublime://settings/CustomStatusMessage",
+          "type": "object",
+          "allOf": [
+            {
+              "$ref": "sublime://settings/CustomStatusMessage#/definitions/plugin_settings"
+            }
+          ],
+          "definitions": {
+            "plugin_settings": {
+              "properties": {
+                "enabled": {
+                  "description": "Enable this plugin.",
+                  "type": "boolean",
+                  "default": true
+                },
+                "template": {
+                  "markdownDescription": "The template to use for the status bar. The following variables are available:\n\n- `row`: The current row number. (1-based)\n- `col`: The current column number. (1-based)\n- `row_0`: The current row number. (0-based)\n- `col_0`: The current column number. (0-based)\n- `point`: The current caret position.\n- `scope`: The full scope at the caret position.\n- `base_scope`: The first part of the scope at the caret position.\n- `last_scope`: The last part of the scope at the caret position.\n- `buffer_id`: The buffer ID.\n- `view_id`: The view ID.\n- `sheet_id`: The sheet ID.\n- `window_id`: The window ID.\n- `encoding`: The encoding of the current view.\n- `line_endings`: The line endings of the current view.\n- `size`: The size of the current view.\n- `syntax`: The `Syntax` object of the current view.",
+                  "type": "string",
+                  "default": "Ln {row}, Col {col}"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
