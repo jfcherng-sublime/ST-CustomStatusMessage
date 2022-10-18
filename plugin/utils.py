@@ -14,7 +14,7 @@ def get_plugin_settings() -> sublime.Settings:
 
 
 def is_regular_view(view: sublime.View) -> bool:
-    return view.is_valid() and not view.is_loading() and not view.element()
+    return bool(view.is_valid() and not view.is_loading() and not view.element() and view.window())
 
 
 def get_template_variables(view: sublime.View, *, point: int) -> Dict[str, Any]:
