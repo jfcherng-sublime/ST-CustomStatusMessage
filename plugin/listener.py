@@ -76,6 +76,8 @@ class CustomStatusMessageListener(sublime_plugin.ViewEventListener):
                 "scope": scope,
                 "base_scope": scope.partition(" ")[0],
                 "last_scope": scope.rpartition(" ")[2],
+                # others
+                "size": self.view.size(),
             }
         )
 
@@ -94,7 +96,6 @@ class CustomStatusMessageListener(sublime_plugin.ViewEventListener):
                 # others
                 "encoding": self.view.encoding(),
                 "line_endings": self.view.line_endings(),
-                "size": self.view.size(),
                 "syntax": self.view.syntax(),
             }
         )
