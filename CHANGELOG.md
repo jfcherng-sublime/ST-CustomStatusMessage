@@ -1,5 +1,9 @@
 # CustomStatusMessage Changelog
 
+## 0.0.3
+
+- refactor: update template variables only when necessary
+
 ## 0.0.2
 
 - fix: exception when closing a view
