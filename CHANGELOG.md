@@ -1,5 +1,9 @@
 # CustomStatusMessage Changelog
 
+## 0.0.4
+
+- fix: `size` should be updated when caret moves
+
 ## 0.0.3
 
 - refactor: update template variables only when necessary
