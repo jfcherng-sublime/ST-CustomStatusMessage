@@ -10,6 +10,10 @@
 
 This plugin sets a custom message in the status bar.
 
+## Important Notice
+
+This plugin is unmaintained because it's not possible to do it perfect due to API limitations.
+
 ## Installation
 
 This package is available on [Package Control][package-control] by the name of [CustomStatusMessage][customstatusmessage].
